@@ -1,0 +1,101 @@
+.header {
+    margin-top: 48px;
+    &__nav {
+    }
+
+    &__nav-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 488px;
+    }
+
+    &__nav-company {
+        max-width: 227px;
+        font-size: 12px;
+        font-family: Gotham Pro Regular;
+    }
+
+    &__nav-registration {
+        width: 296px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__phone {
+        font-family: Gotham Pro Medium;
+        font-size: 16px;
+        font-weight: 700px;
+        color: black;
+    }
+
+    &__btn {
+        @extend %button;
+        background-color: #273895;
+        border-radius: 15px;
+        padding: 16px 32px;
+    }
+
+    &__nav-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 560px;
+        margin-top: 48px;
+    }
+
+    &__nav-link {
+        @extend %subtitle;
+        color: $nav-color;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 55px;
+        padding-right: 77px;
+    }
+    
+    &__inner-text {
+        max-width: 733px;
+    }
+
+    &__title {
+        font-size: $fs-h1;
+        font-family: Gotham Pro Bold;
+        font-weight: 700;
+        line-height: 55px;
+    }
+    
+    &__description {
+        @extend %description;
+        max-width: 545px;
+        margin: 16px 0 48px 0;
+    }
+    
+    &__inner-img {
+        width: max-content;
+        position: relative;
+        &::before {
+                content: url(../../images/header/circle.svg);
+                position: absolute;
+                top: -76px;
+                right: 67px;
+                width: 145px;
+                height: 145px;
+            }
+    }
+}    
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+  

@@ -1,0 +1,40 @@
+            // TITLE
+
+%title-white {
+    color: $text-white;
+    font-family: Gotham Pro Bold;
+    font-size: $fs-title;
+    font-weight: 700;
+    line-height: 44px;
+}
+%title-black {
+    color: $title-black;
+    font-family: Gotham Pro Bold;
+    font-size: $fs-title;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+        // SUBTITLE
+
+%subtitle {
+    font-family: Gotham Pro Medium;
+    font-size: $fs-subtitle;
+    font-weight: 400;
+    color: $text-black;
+    line-height: 26px;
+}
+%description{
+    font-family: Gotham Pro Regular;
+    font-size:$fs-description;
+    font-weight: 400;
+    color:$text-black;
+    line-height: 150%;
+}
+%button{
+    font-family: Gotham Pro Medium;
+    font-size: $fs-buttons;
+    font-weight: 400;
+    line-height: 18px;
+    color:$text-white;
+}

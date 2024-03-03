@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Gotham Pro Regular";
+  src: url("../fonts/gothum-regular/GothamPro.eot");
+  src: url("../fonts/gothum-regular/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/gothum-regular/GothamPro.woff") format("woff"), url("../fonts/gothum-regular/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro Medium";
+  src: url("../fonts/gothum-medium/GothamPro-Medium.eot");
+  src: url("../fonts/gothum-medium/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gothum-medium/GothamPro-Medium.woff") format("woff"), url("../fonts/gothum-medium/GothamPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url("../fonts/gothum-bold/GothamPro-Bold.eot");
+  src: url("../fonts/gothum-bold/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gothum-bold/GothamPro-Bold.woff") format("woff"), url("../fonts/gothum-bold/GothamPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+header,
+footer,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header__nav-link {
+  font-family: Gotham Pro Medium;
+  font-size: 16px;
+  font-weight: 400;
+  color: #404040;
+  line-height: 26px;
+}
+
+.header__description {
+  font-family: Gotham Pro Regular;
+  font-size: 14px;
+  font-weight: 400;
+  color: #404040;
+  line-height: 150%;
+}
+
+.header__btn {
+  font-family: Gotham Pro Medium;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #FFF;
+}
+
+.header {
+  margin-top: 48px;
+}
+.header__nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 488px;
+}
+.header__nav-company {
+  max-width: 227px;
+  font-size: 12px;
+  font-family: Gotham Pro Regular;
+}
+.header__nav-registration {
+  width: 296px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__phone {
+  font-family: Gotham Pro Medium;
+  font-size: 16px;
+  font-weight: 700px;
+  color: black;
+}
+.header__btn {
+  background-color: #273895;
+  border-radius: 15px;
+  padding: 16px 32px;
+}
+.header__nav-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+  margin-top: 48px;
+}
+.header__nav-link {
+  color: #000;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+  padding-right: 77px;
+}
+.header__inner-text {
+  max-width: 733px;
+}
+.header__title {
+  font-size: 48px;
+  font-family: Gotham Pro Bold;
+  font-weight: 700;
+  line-height: 55px;
+}
+.header__description {
+  max-width: 545px;
+  margin: 16px 0 48px 0;
+}
+.header__inner-img {
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+.header__inner-img::before {
+  content: url(../../images/header/circle.svg);
+  position: absolute;
+  top: -76px;
+  right: 67px;
+  width: 145px;
+  height: 145px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */

@@ -1,8 +1,9 @@
+.container-header{
+    position: relative;
+}
+
 .header {
     margin-top: 48px;
-    &__nav {
-    }
-
     &__nav-top {
         display: flex;
         justify-content: space-between;
@@ -33,13 +34,23 @@
         font-size: 16px;
         font-weight: 700px;
         color: black;
+        transition: all .3s;
+        &:hover{
+            color: $bg-blue-button;
+        }
     }
 
     &__btn {
         @extend %button;
-        background-color: #273895;
+        background-color: $bg-blue-button;
         border-radius: 15px;
         padding: 16px 32px;
+        transition: all .3s ease-out;
+        &:hover {
+                color: $bg-blue-button;
+                background-color: transparent;
+                outline: 1px solid $bg-blue-button;
+            }
     }
 
     &__nav-footer {
@@ -51,7 +62,13 @@
 
     &__nav-link {
         @extend %subtitle;
+        font-family: Gotham Pro Bold;
         color: $nav-color;
+        transition: all .3s ;
+        &:hover{
+            color: $bg-blue-button;
+        }
+
     }
 
     &__inner {
@@ -59,7 +76,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 55px;
-        padding-right: 77px;
+        padding-right: 77px;        
     }
     
     &__inner-text {
@@ -91,6 +108,33 @@
                 height: 145px;
             }
     }
+
+    &__bottom {
+        width: 740px;
+        background-color: $bg-blocks;
+        border-radius: 10px;
+        box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+        padding: 32px 48px;
+        position: absolute;
+        right: 0;
+        bottom: -57px;
+
+    }
+    
+    &__list {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+    
+     &__list-item {
+       max-width: 224px;
+     }
+    
+     &__list-text {
+        @extend %subtitle;
+        margin-top: 8px;
+     }
 }    
 
 .container {
@@ -98,4 +142,26 @@
     margin: auto;
 }
 
+  .logo {
+      position: relative;
+      &::before {
+          content: '';
+          position: absolute;
+        top: -136px;
+        left: -96px;
+          width: 474px;
+          height: 474px;
+          background: rgb(205, 187, 239);
+          border-radius: 50% 50%;
+          opacity: .25;
+        filter: blur(40px);
+        z-index: -2;
+      }
+      img{
+        transition: all .2s ease-in;
+      }
+        &:hover > img {
+            transform: scale(1.02);
+        }
+  }
   

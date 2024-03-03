@@ -1,0 +1,121 @@
+.main {}
+
+.container-about{
+    
+}
+.about {
+
+    &__team {
+        margin: 275px 0 0 0 ;
+        padding: 25px 95px 0 95px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(../../images/about/bg.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    &__team-text {
+        width: 406px;
+    }
+
+    &__title {
+        @extend %title-black;
+        margin: 32px 0 16px 0;
+    }
+
+    &__description {
+        @extend %description;
+    }
+
+    &__team-blocks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px;
+        width: 430px;
+        position: relative;
+    }
+
+     &__block {
+        @extend %block;
+        padding: 32px;
+        width: 179px;
+     }
+    &__block-big {
+        width: 210px;
+        position: relative;
+         &::after {
+            content: 'тис.';
+            position: absolute;
+            top: 52px;
+            left: 155px;
+            @extend %subtitle;
+            color: rgb(114, 71, 255);
+        }
+    }
+    &__block-big2 {
+    position: absolute;
+    width: 192px;
+    transform: scale(1.1);
+    left: 220px;
+    top: 218px;
+    }
+    &__block-number {
+        color: rgb(114, 71, 255);
+        font-family: Gotham Pro Bold;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 44px;
+    }
+    &__block-2{
+        margin-top: 10px;
+    }
+    &__block-3 {
+        margin-left: 10px;
+    }
+
+    &__block-text {
+        @extend %description;
+        margin-top: 8px;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        text-align: center;
+        margin-top: 85px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 31px;
+        padding: 0 95px 0 95px;
+    }
+
+    &__card {
+        @extend %block;
+        box-shadow: none;
+        width: 344px;
+        padding: 32px;
+        transition: all .3s;
+    }
+
+    &__card-img {
+        display: block;
+        margin: auto
+    }
+
+    &__card-name {
+        @extend %subtitle;
+        margin: 16px 0 16px 0;
+
+    }
+
+    &__card-text {
+        @extend %description;
+    }
+}
+.block-number {
+    &__small {font-size: 36px;}
+}

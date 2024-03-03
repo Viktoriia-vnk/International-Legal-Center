@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Gotham Pro Regular";
   src: url("../fonts/gothum-regular/GothamPro.eot");
@@ -94,7 +95,7 @@ li {
 }
 
 img {
-  vertical-align: top;
+  vertical-align: team;
 }
 
 h1,
@@ -107,7 +108,15 @@ h6 {
   font-weight: 400;
 }
 
-.header__list-text, .header__nav-link {
+.about__title {
+  color: #262626;
+  font-family: Gotham Pro Bold;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.about__card-name, .about__subtitle, .about__block-big::after, .header__list-text, .header__nav-link {
   font-family: Gotham Pro Medium;
   font-size: 16px;
   font-weight: 400;
@@ -115,7 +124,7 @@ h6 {
   line-height: 26px;
 }
 
-.header__description {
+.about__card-text, .about__block-text, .about__description, .header__description {
   font-family: Gotham Pro Regular;
   font-size: 14px;
   font-weight: 400;
@@ -129,6 +138,12 @@ h6 {
   font-weight: 400;
   line-height: 18px;
   color: #FFF;
+}
+
+.about__card, .about__block {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
 }
 
 .container-header {
@@ -220,7 +235,7 @@ h6 {
   position: relative;
 }
 .header__inner-img::before {
-  content: url(../../images/header/circle.svg);
+  content: url(../../images/header/circle2.svg);
   position: absolute;
   top: -76px;
   right: 67px;
@@ -254,10 +269,10 @@ h6 {
   margin: auto;
 }
 
-.logo {
+.logo-header {
   position: relative;
 }
-.logo::before {
+.logo-header::before {
   content: "";
   position: absolute;
   top: -136px;
@@ -270,11 +285,100 @@ h6 {
   filter: blur(40px);
   z-index: -2;
 }
+
 .logo img {
   transition: all 0.2s ease-in;
 }
 .logo:hover > img {
   transform: scale(1.02);
+}
+
+.about__team {
+  margin: 275px 0 0 0;
+  padding: 25px 95px 0 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../../images/about/bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.about__team-text {
+  width: 406px;
+}
+.about__title {
+  margin: 32px 0 16px 0;
+}
+.about__team-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  width: 430px;
+  position: relative;
+}
+.about__block {
+  padding: 32px;
+  width: 179px;
+}
+.about__block-big {
+  width: 210px;
+  position: relative;
+}
+.about__block-big::after {
+  content: "тис.";
+  position: absolute;
+  top: 52px;
+  left: 155px;
+  color: rgb(114, 71, 255);
+}
+.about__block-big2 {
+  position: absolute;
+  width: 192px;
+  transform: scale(1.1);
+  left: 220px;
+  top: 218px;
+}
+.about__block-number {
+  color: rgb(114, 71, 255);
+  font-family: Gotham Pro Bold;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 44px;
+}
+.about__block-2 {
+  margin-top: 10px;
+}
+.about__block-3 {
+  margin-left: 10px;
+}
+.about__block-text {
+  margin-top: 8px;
+}
+.about__subtitle {
+  text-align: center;
+  margin-top: 85px;
+}
+.about__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+  padding: 0 95px 0 95px;
+}
+.about__card {
+  box-shadow: none;
+  width: 344px;
+  padding: 32px;
+  transition: all 0.3s;
+}
+.about__card-img {
+  display: block;
+  margin: auto;
+}
+.about__card-name {
+  margin: 16px 0 16px 0;
+}
+.block-number__small {
+  font-size: 36px;
 }
 
 body {

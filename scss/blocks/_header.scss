@@ -100,7 +100,7 @@
         width: max-content;
         position: relative;
         &::before {
-                content: url(../../images/header/circle.svg);
+                content: url(../../images/header/circle2.svg);
                 position: absolute;
                 top: -76px;
                 right: 67px;
@@ -142,25 +142,27 @@
     margin: auto;
 }
 
-  .logo {
+  .logo-header {
       position: relative;
       &::before {
-          content: '';
-          position: absolute;
+        content: '';
+        position: absolute;
         top: -136px;
         left: -96px;
-          width: 474px;
-          height: 474px;
-          background: rgb(205, 187, 239);
-          border-radius: 50% 50%;
-          opacity: .25;
+        width: 474px;
+        height: 474px;
+        background: rgb(205, 187, 239);
+        border-radius: 50% 50%;
+        opacity: .25;
         filter: blur(40px);
         z-index: -2;
       }
-      img{
-        transition: all .2s ease-in;
-      }
-        &:hover > img {
+      
+  }
+  .logo{
+    img { transition: all .2s ease-in;}
+    
+        &:hover>img {
             transform: scale(1.02);
         }
   }

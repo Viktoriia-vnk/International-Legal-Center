@@ -37,10 +37,43 @@
     font-weight: 400;
     line-height: 18px;
     color:$text-white;
+    background-color: $bg-blue-button;
+    border-radius: 15px;
+    transition: all .3s ease-out;
+    &:hover {
+            color: $bg-blue-button;
+            background-color: transparent;
+            outline: 1px solid $bg-blue-button;
+        }
 }
 
 %block{
     background: $bg-blocks;
     border-radius: 10px;
     box-shadow: 0px 4px 100px 0px rgba(208, 218, 227, 0.57);
+}
+%card-tarif{
+    background-color: $bg-blocks;
+    padding: 48px 0 48px 48px;
+    width: 513px;
+    border-radius: 10px;
+}
+
+%list-checked{
+    li {
+            padding: 0 0 0 24px;
+            position: relative;
+            @extend %description;
+            line-height: 24px;
+    
+            &::before {
+                content: '';
+                background-image: url(../../images/advantages/check.svg);
+                position: absolute;
+                top: 7px;
+                left: 0;
+                width: 12px;
+                height: 7px;
+            }
+        }
 }

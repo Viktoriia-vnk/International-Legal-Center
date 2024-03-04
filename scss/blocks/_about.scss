@@ -1,13 +1,10 @@
-.main {}
-
-.container-about{
-    
+.container-main{
+    width: 1062px;
 }
 .about {
 
     &__team {
         margin: 275px 0 0 0 ;
-        padding: 25px 95px 0 95px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,10 +44,10 @@
         position: relative;
          &::after {
             content: 'тис.';
+            @extend %subtitle;
             position: absolute;
             top: 52px;
             left: 155px;
-            @extend %subtitle;
             color: rgb(114, 71, 255);
         }
     }
@@ -87,10 +84,12 @@
     }
 
     &__cards {
+        margin: auto;
+       width: 1062px;
         display: flex;
         justify-content: space-between;
         margin-top: 31px;
-        padding: 0 95px 0 95px;
+      
     }
 
     &__card {

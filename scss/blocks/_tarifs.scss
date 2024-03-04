@@ -1,0 +1,172 @@
+.tarifs {
+margin-top: 447px;
+    &__title {
+        @extend %title-black;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__subtext {
+        margin-bottom: 32px;
+        @extend %description;
+        text-align: center;
+    }
+
+    &__links{
+        width: max-content;
+        margin: auto;
+        margin-bottom: 42px;
+    }
+
+    &__link-blue {
+        @extend %button;
+        padding: 10px 28px;
+        margin: 32px 32px  0;
+        &:last-child{
+            margin: 0;
+        }
+    }
+
+    &__tarif-free {
+        @extend %block;
+        box-shadow: none;
+        padding: 48px 0 48px 0;
+        transition: all .3s ease-in-out;
+        &:hover{
+            > .tarifs__tarif-price{
+                color: $text-black;
+            }
+            background-color: #e4e5e8;
+            scale: 1.03;
+        }
+    }
+
+    &__name {
+        @extend %subtitle;
+        color: $bg-blue-button;
+        text-transform: uppercase;       
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+
+    &__tarif-name {
+        text-align: center;
+    }
+
+    &__tarif-price {
+        color: rgb(201, 201, 201);
+        font-family: Gotham Pro Medium;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        text-align: center;
+        margin: 8px 0 16px 0;
+        transition: all .3s ease-in-out;
+    }
+
+    &__price {
+        @extend %subtitle;
+        font-weight: 700;
+    }
+
+    &__tarif-description {
+        text-align: center;
+        line-height: 30px;
+    }
+
+    &__description {
+        @extend %description;
+    }
+
+    &__tarif-available {
+        text-align: center;
+        margin: 16px 0 16px 0;
+    }
+
+    &__available {
+        @extend %subtitle;
+        font-weight: 700;
+    }
+
+    &__tarif-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-width:638px ;
+    margin: auto;
+    margin-bottom: 20px;
+    }
+
+    &__list {
+        @extend %list-checked;
+    }
+
+    &__tarif-link {
+        justify-content: center;
+        margin: auto;
+        &:hover{
+            padding-left: 10px;
+        }
+    }
+
+    &__link {
+        @extend %subtitle;
+        line-height: 8px;
+        color: $bg-blue-button;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all .4s ease-in-out;
+        padding: 4px 4px 4px 0;
+        width:330px;
+       
+        &::after{
+            content: url(../../images/arrow-more.svg);
+        }
+        &:hover{
+            gap: 20px;
+        }
+    }
+
+    &__tarif-btn {
+        display: block;
+        width: max-content;
+        margin: auto;
+        margin-top: 26px;
+    }
+
+    &__btn {
+        @extend %button;
+        padding: 15px 20px;
+        width: max-content ;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 33px;
+        margin-top: 32px ;
+    }
+
+    &__items-card {
+        @extend %card-tarif;
+        display: flex;
+        flex-direction: column;
+        min-height: 647px;
+        justify-content: space-between;
+        transition: all .3s ease-in-out;
+            &:hover {
+                background-color: #e4e5e8;
+                scale: 1.03;
+            }
+    }
+
+    &__card-list {
+        font-size: 18px;
+        width: 395px;
+        min-height: 270px;
+        li{
+        margin-bottom: 16px;
+        }
+    }
+}

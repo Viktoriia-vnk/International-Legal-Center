@@ -42,15 +42,7 @@
 
     &__btn {
         @extend %button;
-        background-color: $bg-blue-button;
-        border-radius: 15px;
         padding: 16px 32px;
-        transition: all .3s ease-out;
-        &:hover {
-                color: $bg-blue-button;
-                background-color: transparent;
-                outline: 1px solid $bg-blue-button;
-            }
     }
 
     &__nav-footer {

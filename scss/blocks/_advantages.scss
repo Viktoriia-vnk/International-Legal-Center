@@ -1,0 +1,135 @@
+.container-advantages{
+    width: 1062px;
+    position: relative;
+}
+.advantages {
+  margin-top: 144px;
+    &__title {
+        @extend %title-black;
+        text-align: center;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    &__inner-img {
+        width: max-content;
+    }
+    &__inner-help{
+        background-color: $bg-blocks;
+        padding: 19px 24px 26px 24px;
+        border-radius: 11.94px;
+        position: absolute;
+        top: 63px;
+        left: 44px;
+        box-shadow: 0px 13.53px 39.79px 0px rgba(187, 166, 255, 0.78);
+    }
+    &__help-text{
+        @extend %subtitle;
+        font-weight: 700;
+        margin-bottom: 17px;
+        font-size: 12px;
+    }
+    &__help-link {
+        @extend %description;
+        font-size: 12px;
+        margin: 0 0 0 8px;
+        color: $text-white;
+        border-radius: 8px;
+        padding: 15px 22px;
+        position: relative;
+        background: rgb(51, 51, 163);
+        background: radial-gradient(circle, rgba(51, 51, 163, 1) 0%, rgba(78, 101, 223, 1) 100%);
+        z-index: 0;
+        &::before{
+            content: '';
+            background: radial-gradient(circle, rgba(51, 51, 163, 1) 0%, rgba(78, 101, 223, 1) 100%);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;           
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 12s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 8px;
+            z-index: -1;
+        }
+        &:hover {&::before{opacity: 1;}}
+
+        @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+            
+        100% {
+            background-position: 0 0;
+        }
+    }
+     
+    }
+
+    &__text-sirius {
+       max-width: 438px;
+    }
+
+    &__inner-subtitle {
+        @extend %subtitle;
+        width: 80px;
+        color: rgb(114, 71, 255);
+        letter-spacing: 17%;
+        line-height: 44px;
+        margin-bottom: 8px;
+    }
+
+    &__inner-text {
+        @extend %description;
+        max-width: 393px;
+        margin-bottom: 15px;
+    }
+
+    &__list-sirius {
+        @extend %list-checked;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 330px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 1256px;
+        top: 420px;
+        left: -77px;
+
+    }
+
+    &__card {
+        @extend %block;
+        padding: 33px;
+        width: 236px;
+       
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        max-width: 172px;
+        margin: 16px 0 11px 0;
+    }
+
+    &__text {
+        @extend %description;
+        width: 172px ;
+    }
+}

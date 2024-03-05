@@ -1,0 +1,21 @@
+.partnership {
+
+    &__wrapper {
+        background-image: url(../../images/partnership/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 88px 0 205px 0;
+    }
+
+    &__title {
+        @extend %title-white;
+        max-width: 398px;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        @extend %subtitle;
+        color: $text-white;
+        max-width: 321px;
+    }
+}

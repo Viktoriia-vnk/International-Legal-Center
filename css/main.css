@@ -108,6 +108,14 @@ h6 {
   font-weight: 400;
 }
 
+.partnership__title {
+  color: #FFF;
+  font-family: Gotham Pro Bold;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
 .tarifs__title, .advantages__title, .about__title {
   color: #262626;
   font-family: Gotham Pro Bold;
@@ -116,7 +124,7 @@ h6 {
   line-height: 44px;
 }
 
-.tarifs__link, .tarifs__available, .tarifs__price, .tarifs__name, .advantages__subtitle, .advantages__inner-subtitle, .advantages__help-text, .about__card-name, .about__subtitle, .about__block-big::after, .header__list-text, .header__nav-link {
+.partnership__text, .tarifs__link, .tarifs__available, .tarifs__price, .tarifs__name, .advantages__subtitle, .advantages__inner-subtitle, .advantages__help-text, .about__card-name, .about__subtitle, .about__block-big::after, .header__list-text, .header__nav-link {
   font-family: Gotham Pro Medium;
   font-size: 16px;
   font-weight: 400;
@@ -287,7 +295,7 @@ h6 {
 }
 
 .container {
-  width: 90%;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -659,6 +667,21 @@ h6 {
 }
 .tarifs__card-list li {
   margin-bottom: 16px;
+}
+
+.partnership__wrapper {
+  background-image: url(../../images/partnership/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 88px 0 205px 0;
+}
+.partnership__title {
+  max-width: 398px;
+  margin-bottom: 16px;
+}
+.partnership__text {
+  color: #FFF;
+  max-width: 321px;
 }
 
 body {
